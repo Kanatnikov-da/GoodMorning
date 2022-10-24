@@ -1,30 +1,24 @@
 package com.example.goodmorning.domain.entiity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
 @Data
+@Table(name = "notes")
+@NoArgsConstructor
 public class NoteEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id;
+    private Long id;
+    private String text;
+    private LocalDate created;
 
-    private String notes;
-    private LocalDate date;
-
-
-    public NoteEntity() {
-
-    }
-
-    public NoteEntity(String notes, LocalDate date) {
-        this.notes = notes;
-        this.date = date;
+    public NoteEntity(String text, LocalDate created) {
+        this.text = text;
+        this.created = created;
     }
 }

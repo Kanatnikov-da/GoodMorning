@@ -7,5 +7,8 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface NotesRepo extends CrudRepository<NoteEntity, Long> {
-    List<NoteEntity> findByDate(LocalDate date);
+    List<NoteEntity> findAllByCreated(LocalDate created);
+
+//    @Transactional(propagation = Propagation.REQUIRES_NEW)
+
 }

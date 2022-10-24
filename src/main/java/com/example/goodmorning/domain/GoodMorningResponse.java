@@ -16,5 +16,5 @@ public class GoodMorningResponse {
    @JsonProperty("weatherInfo")
    private WeatherInfo weatherInfo;
    @JsonProperty("notes")
-   private List<String> notes;
+   private List<NoteInfo> notes;
 }
