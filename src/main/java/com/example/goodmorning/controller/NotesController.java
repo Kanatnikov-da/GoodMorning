@@ -8,11 +8,9 @@ import com.example.goodmorning.service.NoteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@Controller
 @RequiredArgsConstructor
 public class NotesController {
     private final NoteService noteService;

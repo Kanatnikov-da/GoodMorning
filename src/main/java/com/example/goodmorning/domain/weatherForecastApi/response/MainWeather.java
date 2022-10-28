@@ -3,7 +3,6 @@ package com.example.goodmorning.domain.weatherForecastApi.response;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.experimental.FieldNameConstants;
-
 import java.math.BigDecimal;
 
 @Data

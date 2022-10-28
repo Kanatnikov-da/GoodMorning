@@ -15,13 +15,13 @@ import static com.example.goodmorning.utils.Utils.getCelsius;
 public class WeatherForecastServiceImpl implements WeatherForecastService{
 
     private final WeatherForecastClient weatherForecastClient;
-    //TODO: tests
-    //TODO: ПОПРОБОВАТЬ MAPSTRUCT
+
     @Override
     @Cacheable("weather")
     public WeatherInfo getDailyTemp() {
        log.info("getting weather");
        MainWeather mainWeather = weatherForecastClient.getWeather().getMain();
+       log.info("getting weather finished");
        return new WeatherInfo(getCelsius(mainWeather.getTemp_min()), getCelsius(mainWeather.getTemp_max()),
                getCelsius(mainWeather.getTemp()));
     }

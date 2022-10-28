@@ -1,6 +1,5 @@
 package com.example.goodmorning.controller;
 
-
 import com.example.goodmorning.domain.ErrorResponse;
 import com.example.goodmorning.exception.GeneralException;
 import com.example.goodmorning.exception.NotFoundException;
