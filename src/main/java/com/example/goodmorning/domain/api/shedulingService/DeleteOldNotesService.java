@@ -1,4 +1,4 @@
-package com.example.goodmorning.service.shedulingService;
+package com.example.goodmorning.domain.api.shedulingService;
 
 public interface DeleteOldNotesService {
      void deleteOldNotes();

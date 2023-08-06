@@ -1,4 +1,4 @@
-package com.example.goodmorning.service.shedulingService;
+package com.example.goodmorning.domain.api.shedulingService;
 
 import com.example.goodmorning.repository.NotesRepo;
 import lombok.RequiredArgsConstructor;
